@@ -45,3 +45,4 @@ plt.xticks(tuple(money['A_MONTH']) )
 plt.title('Housing Price')
 
 st.pyplot(fig)
+st.dataframe(money) 
