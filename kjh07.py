@@ -4,11 +4,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-
-from matplotlib import font_manager, rc
-font = font_manager.FontProperties(fname="c:/Windows/Fonts/malgun.ttf").get_name()
-rc('font', family=font)
-
 #plt.figure(figsize=(12,8))
 
 money = pd.read_csv("money_data7.csv")
