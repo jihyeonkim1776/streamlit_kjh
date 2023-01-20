@@ -26,7 +26,6 @@ fig, ax = plt.subplots(2,2, figsize=(12,8))
 
 st.title('Title')
 
-st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
 plt.subplot(221)
 plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='red' , marker='o'     ) 
 plt.xticks(tuple(money['A_MONTH']) )
