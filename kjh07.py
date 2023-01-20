@@ -24,7 +24,7 @@ money = money[:] [money['A_YEAR']== option2]
 fig, ax = plt.subplots(2,2, figsize=(12,8))
 
 
-st.title('emoji : smile')
+st.title('emojis : smile:')
 
 plt.subplot(221)
 plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='red' , marker='o'     ) 
