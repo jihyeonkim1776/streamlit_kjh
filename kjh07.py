@@ -8,6 +8,7 @@ import numpy as np
 
 money = pd.read_csv("money_data7.csv")
 
+st.sidebar.success("Select a demo above.")
 
 import streamlit as st
 
