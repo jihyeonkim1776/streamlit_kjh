@@ -6,6 +6,8 @@ import numpy as np
 
 #plt.figure(figsize=(12,8))
 
+def  plotting_demo():
+    
 money = pd.read_csv("money_data7.csv")
 
 st.sidebar.success("Select a demo above.")
@@ -32,6 +34,14 @@ plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='red' , mark
 plt.xticks(tuple(money['A_MONTH']) )
 plt.title('America Rate')
 
+with st.form(key ='Form1'):
+    with st.sidebar:
+        
+        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
+        
+        
+if select_language =='line':        
+    plotting_demo()  
 
 plt.subplot(222)
 plt.plot(  list( money['A_MONTH'] ), list( money['K_RATE'] ), color='blue' , marker='o'     ) 
