@@ -50,7 +50,7 @@ def  plotting_demo():
 
 def bar_chart():
 
-    url = " https://sports.news.naver.com/kbaseball/record/index?category=kbo&year= "
+    url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
 
     years = ['2015', '2016','2017', '2018', '2019', '2020', '2021', '2022' ]
 
@@ -85,11 +85,11 @@ def bar_chart():
     for   num ,   v    in   enumerate( y ):
         plt.text (  num -0.4  ,   v + 0.01 ,  v   )
 
-    plt.title( 'I made it :sunglasses:', position=(0.5,1.1))
+    plt.title( "year korea baseball winrate data", position=(0.5,1.1))
     st.pyplot(fig)
     st.dataframe(df7)
 
-        
+st.set_page_config(layout="centered")        
 
 with st.form(key ='Form1'):
     with st.sidebar:
