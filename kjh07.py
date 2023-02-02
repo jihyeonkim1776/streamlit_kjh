@@ -79,7 +79,7 @@ def bar_chart():
     
     global  bb
     
-    bb = baseball
+    bb = baseball2
 
     st.write('You selected:', option)
 
