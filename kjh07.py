@@ -59,6 +59,10 @@ def bar_chart():
     years = ['2015', '2016','2017', '2018', '2019', '2020', '2021', '2022' ]
 
     df = pd.DataFrame([]) 
+    
+    global  aa
+    
+    aa = money
 
     for    i    in     years: 
         df1 = pd.read_html( url + i  )[0]
@@ -125,3 +129,5 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
         tab2.subheader("A tab with the data")
         st.dataframe(aa)
 
+else:
+    bar_chart()
