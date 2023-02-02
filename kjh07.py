@@ -77,9 +77,7 @@ def bar_chart():
     
     baseball = baseball[:] [baseball['years']== option2]
     
-    global  bb
-    
-    bb = baseball2
+    aa = baseball
 
     st.write('You selected:', option)
 
