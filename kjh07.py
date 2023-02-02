@@ -75,11 +75,11 @@ def bar_chart():
 
     option2 = option
     
-    money = money[:] [money['A_YEAR']== option2]
+    baseball = baseball[:] [baseball['years']== option2]
     
     global  bb
     
-    bb = money
+    bb = baseball
 
     st.write('You selected:', option)
 
@@ -125,7 +125,7 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
     tab1, tab2 = st.tabs(["📈 chart", "🗃 Data"])
    
     with tab1:
-        tab1.subheader("A tab with a chart")
+        tab1.subheader("A tab with a bar chart")
         plotting_demo()
         
     with tab2:
